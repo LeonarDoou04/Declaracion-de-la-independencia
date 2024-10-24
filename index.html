@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración de Independencia Argentina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="menu-toggle">
+            <img src="img/menu.png" alt="Menú" class="menu-icon">
+        </div>
+        <ul class="nav-items">
+            <li><a href="#"><strong>INICIO</strong></a></li>
+            <li><a href="html/involucrados.html"><strong>¿QUIENES FUERON LOS PRINCIPALES INVOLUCRADOS?</strong></a></li>
+            <li><a href="html/camino.html"><strong>UN LARGO CAMINO</strong></a></li>
+            <li><a href="html/espacio.html"><strong>ESPACIO DE APRENDIZAJE ADAPTADO</strong></a></li>
+            <li><a href="html/informacion.html"><strong>INFORMACION</strong></a></li>
+        </ul>
+    </nav>
+
+    <header class="title-section">
+        <h1>Declaración de la Independencia Argentina</h1>
+    </header>
+
+    <div class="content">
+        <p>La Independencia de Argentina se declaró el 9 de julio de 1816 en la ciudad de San Miguel de Tucumán. En ese momento, representantes de varias provincias decidieron separarse de España y de cualquier otro poder extranjero.</p>
+        <p>El motivo principal fue la inestabilidad en España y el deseo de tener un país libre y gobernado por ellos mismos. A partir de ese día, Argentina comenzó su camino como nación independiente.</p>
+    </div>
+    <h2>Zamba en la Declaración de Independencia | El Resumen</h2>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/gBeJWZmJ38A" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>@Copyright Ottino Zoel Maria Lizet</p>
+            <p>Ciencias Sociales y su Didáctica</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const navItems = document.querySelector('.nav-items');
+            navItems.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-section {
+    background-image: url('../img/acta2.png');
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+/* Involucrados Section */
+.involucrados-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Para centrar horizontalmente las cards */
+    align-items: center;
+    padding: 20px;
+    gap: 20px; /* Espaciado entre las cards */
+}
+
+.involucrado-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px; /* Anchura fija para las tarjetas */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.involucrado-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.involucrado-card h3 {
+    font-size: 20px;
+    color: #01122E;
+    margin: 10px 0;
+}
+
+.involucrado-card p {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.involucrado-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #01122E;
+    padding: 10px;
+    position: relative;
+}
+
+nav .menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+nav .nav-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav-items li {
+    margin: 0 15px;
+}
+
+nav .nav-items li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav .nav-items li a:hover {
+    color: #ffeb3b;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #01122E;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title-section {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .involucrados-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .involucrado-card {
+        width: 100%; /* Las tarjetas ocuparán todo el ancho disponible en pantallas más pequeñas */
+        max-width: 300px;
+    }
+
+    nav .nav-items {
+        display: none;
+        flex-direction: column;
+        padding-left: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        width: 100%;
+    }
+
+    nav .nav-items.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    nav .nav-items li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav .menu-toggle {
+        display: block;
+    }
+
+    nav .menu-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
